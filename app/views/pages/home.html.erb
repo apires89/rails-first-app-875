@@ -1,0 +1,16 @@
+<h1>Home Page</h1>
+<p>The time is <%= Time.now %></p>
+
+<h1>Meet our team</h1>
+<ul>
+<% @members.each do |member| %>
+<li>
+ <%= member %>
+</li>
+
+<% end %>
+</ul>
+
+
+<%= link_to "Contact", contact_path %>
+<%= link_to "About", about_path %>
